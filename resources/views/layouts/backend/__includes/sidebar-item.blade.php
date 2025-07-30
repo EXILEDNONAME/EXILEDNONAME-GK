@@ -14,7 +14,7 @@
     </ul>
   </div>
 </li>
-<li class="menu-item menu-item-submenu {{ (request()->is('dashboard/profiles*')) ? 'menu-item-open' : '' }}">
+<li class="menu-item menu-item-submenu {{ (request()->is('dashboard/families*')) ? 'menu-item-open' : '' }}">
   <a class="menu-link menu-toggle">
     <i class="menu-icon fas fa-users"></i>
     <span class="menu-text"> Families </span>
