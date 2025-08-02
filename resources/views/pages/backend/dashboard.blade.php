@@ -3,7 +3,7 @@
 
 @section('content')
 <div class="row">
-  <div class="col-xl-12">
+  <div class="col-xl-6">
     <div class="card card-custom card-stretch gutter-b">
       <div class="card-body d-flex align-items-center py-0 mt-2">
         <div class="d-flex flex-column flex-grow-1 py-lg-5">
@@ -17,8 +17,30 @@
       </div>
     </div>
   </div>
+  <div class="col-xl-6">
+    <div class="card card-custom gutter-b p-5" data-card="true">
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col"> Name </th>
+              <th class="text-nowrap text-center" width="1" scope="col"> Link </th>
+            </tr>
+          </thead>
+          <tbody>
+            @foreach($report as $report)
+            <tr>
+              <td class="text-nowrap"> {{ $report->name }}</td>
+              <td class="text-nowrap text-center"><a href="{{ $report->link }}" target="_blank"><i class="text-primary icon-md fas fa-link"></i></a></td>
+            </tr>
+            @endforeach
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 </div>
-
+@include('pages.backend.__widget.default')
 @endsection
 
 @push('js')

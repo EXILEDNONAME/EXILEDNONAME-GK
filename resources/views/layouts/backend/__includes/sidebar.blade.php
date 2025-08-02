@@ -38,13 +38,13 @@
             <ul class="menu-subnav">
               <li class="menu-item menu-item-submenu {{ (request()->is('dashboard/profiles/account-informations*')) ? 'menu-item-active' : '' }}"><a href="{{ url('/dashboard/profiles/account-informations') }}" class="menu-link"><span class="menu-text"><i class="menu-bullet menu-bullet-dot"><span></span></i> Account Informations </span></a></li>
               <li class="menu-item menu-item-submenu {{ (request()->is('dashboard/profiles/change-password*')) ? 'menu-item-active' : '' }}"><a href="{{ url('/dashboard/profiles/change-password') }}" class="menu-link"><span class="menu-text"><i class="menu-bullet menu-bullet-dot"><span></span></i> Change Password </span></a></li>
-              <li class="menu-item menu-item-submenu {{ (request()->is('dashboard/profiles/settings*')) ? 'menu-item-active' : '' }}"><a href="{{ url('/dashboard/profiles/settings') }}" class="menu-link"><span class="menu-text"><i class="menu-bullet menu-bullet-dot"><span></span></i> Settings </span></a></li>
+              <!-- <li class="menu-item menu-item-submenu {{ (request()->is('dashboard/profiles/settings*')) ? 'menu-item-active' : '' }}"><a href="{{ url('/dashboard/profiles/settings') }}" class="menu-link"><span class="menu-text"><i class="menu-bullet menu-bullet-dot"><span></span></i> Settings </span></a></li> -->
             </ul>
           </div>
         </li>
         <li class="menu-item"><a class="menu-link" id="logout"><i class="menu-icon fas fa-sign-out-alt"></i><span class="menu-text"> {{ __('default.label.logout') }} </span></a></li>
 
-        @role('master-administrator')
+        @role('master-administrators')
         <li class="menu-section">
           <h4 class="menu-text"> Applications </h4>
           <i class="menu-icon ki ki-bold-more-hor icon-md"></i>

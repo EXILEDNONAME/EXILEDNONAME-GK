@@ -1,2 +1,2 @@
-@extends('layouts.backend.__templates.edit', ['active' => 'true', 'datetime' => 'false', 'status' => 'false'])
+@extends('layouts.backend.__templates.edit', ['active' => 'true', 'date' => 'false', 'datetime' => 'false', 'status' => 'false'])
 @section('title', 'Family Members')

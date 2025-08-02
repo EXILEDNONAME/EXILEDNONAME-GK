@@ -3,6 +3,11 @@
 var KTBootstrapDatetimepicker = function () {
     // Private functions
     var baseDemos = function () {
+
+      $('#ex_datetimepicker_datetime').datetimepicker({
+        locale: 'en', format:'YYYY-MM-DD HH:mm',
+      });
+
         // Demo 1
         $('#kt_datetimepicker_1').datetimepicker();
 
